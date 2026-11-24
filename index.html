@@ -264,7 +264,7 @@ footer .ft-bd { margin-top:8px; font-size:12px; letter-spacing:4px; font-weight:
       <span class="muted" style="margin-right:8px;">选择考试：</span>
       <span class="chiprow" id="laneOpts"></span>
     </div>
-    <div class="chart-note">柱长 = 班里位置（第 1 名在最左侧）；柱色 = 考试水平：有赋分按北京赋分档（≥86 绿 / ≥71 蓝 / ≥56 黄），无赋分按卷面得分率折算同一档线（≥86% 绿 / ≥71% 蓝 / ≥56% 黄）。这样班里名次不冒尖、但赋分档次高的科目也会亮绿色。</div>
+    <div class="chart-note">柱长 = 班里位置（第 1 名在最左侧）；柱色 = 考试水平：有赋分按北京赋分档（≥86 绿 / ≥71 蓝 / ≥56 黄），无赋分按卷面得分率折算同一档线（≥86% 绿 / ≥71% 蓝 / ≥56% 黄）。这样班里名次不冒尖、但赋分档次高的科目也会亮绿色。未填班级排名的科目自动以年级名次展示，名字后标（年级）。</div>
     <div id="rankLanes"></div>
     <div style="font-size:13px; font-weight:600; color:#334155; margin:18px 0 6px;">与班级平均得分率差值</div>
     <div class="chart-note">四档按与班级平均的得分率差：+5% 以上绿(优秀)、0~+5% 蓝(良好)、-5%~0 黄(一般)、-5% 以下橙(待加强)；仅统计已知班级平均的科目。</div>
@@ -2339,27 +2339,41 @@ function renderLanes(ex){
     box.innerHTML = '<div class="empty">暂无考试数据</div>';
     return;
   }
-  var items = [];
-  if(ex.totalClassRank!=null && ex.totalClassRank>0){
-    items.push({name:'总分', rank:ex.totalClassRank, tot:true, band:totalBand(ex)});
+  function pickRank(cls, sch){
+    if(cls!=null && cls>0) return { v: cls, sch: false };
+    if(sch!=null && sch>0) return { v: sch, sch: true };
+    return null;
+  }
+  var items = [], anySch = false;
+  var tPick = pickRank(ex.totalClassRank, ex.totalSchoolRank);
+  if(tPick){
+    items.push({name:'总分', rank:tPick.v, tot:true, band:totalBand(ex), sch:tPick.sch});
+    if(tPick.sch) anySch = true;
   }
   ex.subjects.forEach(function(s){
-    if(s.classRank!=null && s.classRank>0){ items.push({name:s.name, rank:s.classRank, tot:false, band:assignBand(s)}); }
+    var p = pickRank(s.classRank, s.schoolRank);
+    if(p){
+      items.push({name:s.name, rank:p.v, tot:false, band:assignBand(s), sch:p.sch});
+      if(p.sch) anySch = true;
+    }
   });
   if(!items.length){
-    box.innerHTML = '<div class="lane-empty">本场考试未填写「班级排名」（编辑考试时在每科和总分排名处填写）</div>';
+    box.innerHTML = '<div class="lane-empty">本场考试未填写「班级排名/年级排名」（编辑考试时在每科和总分排名处填写）</div>';
     return;
   }
   var maxR = 1;
   items.forEach(function(it){ maxR = Math.max(maxR, it.rank); });
   var html = '<div class="legend" style="margin-top:0;">' + BAND_LEGEND + '</div>';
+  if(anySch){
+    html += '<div style="color:#94a3b8;font-size:11px;margin-top:4px;">注：标（年级）= 该科未填班级排名，以年级名次展示</div>';
+  }
   items.forEach(function(it){
     var ratio = maxR<=1 ? 0 : (it.rank-1)/(maxR-1);
     var w = Math.round((1-ratio)*92 + 8);
     var band = it.band;
     var grad = 'linear-gradient(90deg,' + bandColor(band, 'light') + ',' + bandColor(band) + ')';
     var flagColor = band==='C' ? '#713f12' : '#fff';
-    html += '<div class="lane"><span class="lane-name' + (it.tot?' tot':'') + '">' + esc(it.name) + '</span><div class="lane-track' + (it.tot?' tot':'') + '"><div class="lane-fill" style="width:' + w + '%;background:' + grad + ';" title="' + esc(it.name) + '：第 ' + it.rank + ' 名（' + bandLabel(band) + '）"><span class="lane-flag" style="color:' + flagColor + ';">第 ' + it.rank + ' 名&nbsp;' + band + '</span></div></div></div>';
+    html += '<div class="lane"><span class="lane-name' + (it.tot?' tot':'') + '">' + esc(it.name) + (it.sch ? '<span style="color:#94a3b8;font-size:11px;">（年级）</span>' : '') + '</span><div class="lane-track' + (it.tot?' tot':'') + '"><div class="lane-fill" style="width:' + w + '%;background:' + grad + ';" title="' + esc(it.name) + '：第 ' + it.rank + ' 名（' + (it.sch?'年级排名':'班级排名') + '，' + bandLabel(band) + '）"><span class="lane-flag" style="color:' + flagColor + ';">第 ' + it.rank + ' 名&nbsp;' + band + '</span></div></div></div>';
   });
   box.innerHTML = html;
 }
@@ -2400,7 +2414,7 @@ function renderCharts(){
       rkVals.push((cur!=null && cur>0) ? cur : null);
       var bw = curS ? assignBand(curS) : null;
       rkBands.push(bw);
-      rkTips.push('本人 ' + (cur && cur>0 ? '第 ' + cur + ' 名（' + (bw ? bandLabel(bw) : '水平未知') + '）' : '未填写名次'));
+      rkTips.push('本人 ' + (cur && cur>0 ? '第 ' + cur + ' 名（' + (bw ? bandLabel(bw) : '水平未知') + '）' : '未填写' + rankTypeName()));
     });
     $('#legRank').innerHTML = '<span><span class="dot" style="background:#74c69d"></span>优秀</span><span><span class="dot" style="background:#74b6e8"></span>良好</span><span><span class="dot" style="background:#eab308"></span>一般</span><span><span class="dot" style="background:#f97316"></span>待加强</span>' + '<span style="color:#94a3b8; margin-left:4px;">' + rankTypeName() + ' · 最新考试</span>';
     drawRankChart('cvRank', rankSubjs, rankSubjs, rkVals, [], rkTips, rkBands);
