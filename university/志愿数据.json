@@ -1,0 +1,902 @@
+{
+ "app": "高考志愿收集板",
+ "savedAt": "2026-11-02T12:30:10.522Z",
+ "schools": [
+  {
+   "id": "smvujl5xm23zu6",
+   "star": false,
+   "name": "中国人民大学",
+   "tag": "985",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "金融学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 15,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "法学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "经济学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "统计学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "新闻传播学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 8,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xmdc1oq",
+   "star": false,
+   "name": "北京师范大学",
+   "tag": "985",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "心理学(含励耘实验班，入校选拔)",
+     "subjReq": "物理+化学",
+     "fee": 5400,
+     "plan": 3,
+     "h": [
+      {
+       "y": 2024,
+       "score": 660,
+       "rank": 2223
+      },
+      {
+       "y": 2025,
+       "score": 661,
+       "rank": 2059
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "社会学(社会学、心理学双学士学位)",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 2,
+     "h": [
+      {
+       "y": 2024,
+       "score": 668,
+       "rank": 1557
+      },
+      {
+       "y": 2025,
+       "score": 664,
+       "rank": 1800
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "心理学(北师大心理学+北航AI联合学士学位)",
+     "subjReq": "物理+化学",
+     "fee": 5400,
+     "plan": 3,
+     "h": [
+      {
+       "y": 2024,
+       "score": null,
+       "rank": null
+      },
+      {
+       "y": 2025,
+       "score": 662,
+       "rank": 1961
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "哲学(哲学、心理学双学士学位)",
+     "subjReq": "不限",
+     "fee": 4800,
+     "plan": 2,
+     "flag": "按组线",
+     "h": [
+      {
+       "y": 2024,
+       "score": null,
+       "rank": null
+      },
+      {
+       "y": 2025,
+       "score": null,
+       "rank": null
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "人力资源管理(心理学、人管双学士学位)",
+     "subjReq": "不限",
+     "fee": 4800,
+     "plan": 2,
+     "flag": "按组线",
+     "h": [
+      {
+       "y": 2024,
+       "score": null,
+       "rank": null
+      },
+      {
+       "y": 2025,
+       "score": null,
+       "rank": null
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "汉语言文学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 3,
+     "h": [
+      {
+       "y": 2024,
+       "score": 667,
+       "rank": 1617
+      },
+      {
+       "y": 2025,
+       "score": 665,
+       "rank": 1732
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "数学与应用数学",
+     "subjReq": "物理",
+     "fee": 5500,
+     "plan": 2,
+     "h": [
+      {
+       "y": 2024,
+       "score": 661,
+       "rank": 2118
+      },
+      {
+       "y": 2025,
+       "score": 662,
+       "rank": 1961
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "地理科学",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 2,
+     "h": [
+      {
+       "y": 2024,
+       "score": 660,
+       "rank": 2223
+      },
+      {
+       "y": 2025,
+       "score": 661,
+       "rank": 2059
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方"
+    },
+    {
+     "name": "物理学类",
+     "subjReq": "物理+化学",
+     "fee": 5500,
+     "plan": 6,
+     "h": [
+      {
+       "y": 2024,
+       "score": 658,
+       "rank": 2395
+      },
+      {
+       "y": 2025,
+       "score": 659,
+       "rank": 2246
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "生物科学类",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 2,
+     "h": [
+      {
+       "y": 2024,
+       "score": 658,
+       "rank": 2395
+      },
+      {
+       "y": 2025,
+       "score": 659,
+       "rank": 2246
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "教育学类(含教育学、学前教育、特殊教育、教育技术学)",
+     "subjReq": "不限",
+     "fee": 4800,
+     "plan": 3,
+     "h": [
+      {
+       "y": 2024,
+       "score": 664,
+       "rank": 1860
+      },
+      {
+       "y": 2025,
+       "score": 660,
+       "rank": 2153
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "法学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 5,
+     "h": [
+      {
+       "y": 2024,
+       "score": 665,
+       "rank": 1776
+      },
+      {
+       "y": 2025,
+       "score": 664,
+       "rank": 1800
+      },
+      {
+       "y": 2026,
+       "score": null,
+       "rank": null
+      }
+     ],
+     "source": "北京教育考试院官方"
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xmsgwk3",
+   "star": false,
+   "name": "中国农业大学",
+   "tag": "985",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "生物科学类",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 16,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "食品科学与工程类",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 18,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "动物医学(五年)",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "农学",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 20,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "植物保护",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 15,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "食品质量与安全",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "动物科学",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 15,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "园艺",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "农业资源与环境",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "种子科学与工程",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "水利水电工程",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "草业科学",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "农业水利工程",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xm473sr",
+   "star": false,
+   "name": "中央民族大学",
+   "tag": "985",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "民族学",
+     "subjReq": "历史",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "历史组不可报",
+     "flag": "历史组不可报"
+    },
+    {
+     "name": "法学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "金融学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "经济学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "汉语言文学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xm6w9kb",
+   "star": false,
+   "name": "中央财经大学",
+   "tag": "211",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "金融学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 40,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "会计学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 30,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "经济学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 30,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "财政学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 25,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xmhjd3g",
+   "star": false,
+   "name": "中国政法大学",
+   "tag": "211",
+   "prov": "北京",
+   "city": "昌平",
+   "majors": [
+    {
+     "name": "法学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 50,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xm773g7",
+   "star": false,
+   "name": "对外经济贸易大学",
+   "tag": "211",
+   "prov": "北京",
+   "city": "朝阳",
+   "majors": [
+    {
+     "name": "金融学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 35,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "国际经济与贸易",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 30,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "会计学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 25,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xmifywf",
+   "star": false,
+   "name": "北京外国语大学",
+   "tag": "211",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "翻译",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 15,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "英语",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 20,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "德语",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 10,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xmv9qfb",
+   "star": false,
+   "name": "中国传媒大学",
+   "tag": "211",
+   "prov": "北京",
+   "city": "朝阳",
+   "majors": [
+    {
+     "name": "新闻传播学类",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 40,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "广播电视学",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 20,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "网络与新媒体",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 20,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xmnx4mq",
+   "star": false,
+   "name": "北京林业大学",
+   "tag": "211",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "风景园林",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 25,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "园林",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 20,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "林学",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 15,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    },
+    {
+     "name": "野生动物与自然保护区管理",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": "按组线",
+     "flag": "按组线"
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xmsfrvh",
+   "star": false,
+   "name": "首都师范大学",
+   "tag": "双一流",
+   "prov": "北京",
+   "city": "海淀",
+   "majors": [
+    {
+     "name": "数学与应用数学(师范)",
+     "subjReq": "物理+化学",
+     "fee": 5000,
+     "plan": 30,
+     "h": [
+      {
+       "y": 2024,
+       "score": 580,
+       "rank": 14596
+      },
+      {
+       "y": 2025,
+       "score": 581,
+       "rank": 16237
+      },
+      {
+       "y": 2026,
+       "score": 584,
+       "rank": 16826
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "汉语言文学(师范)",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 30,
+     "h": [
+      {
+       "y": 2024,
+       "score": 594,
+       "rank": 11907
+      },
+      {
+       "y": 2025,
+       "score": 590,
+       "rank": 14102
+      },
+      {
+       "y": 2026,
+       "score": 586,
+       "rank": 16262
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "心理学(师范)",
+     "subjReq": "不限",
+     "fee": 5000,
+     "plan": 20,
+     "h": [
+      {
+       "y": 2024,
+       "score": 585,
+       "rank": 13610
+      },
+      {
+       "y": 2025,
+       "score": 571,
+       "rank": 18723
+      },
+      {
+       "y": 2026,
+       "score": 563,
+       "rank": 22819
+      }
+     ],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  },
+  {
+   "id": "smvujl5xm3vpj2",
+   "star": false,
+   "name": "中国科学院大学",
+   "tag": "双一流",
+   "prov": "北京",
+   "city": "石景山",
+   "majors": [
+    {
+     "name": "生物科学",
+     "subjReq": "物理+化学",
+     "fee": 5500,
+     "plan": 15,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    },
+    {
+     "name": "化学",
+     "subjReq": "物理+化学",
+     "fee": 5500,
+     "plan": 12,
+     "h": [],
+     "source": "北京教育考试院官方",
+     "tag": null
+    }
+   ]
+  }
+ ]
+}
